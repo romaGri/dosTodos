@@ -34,10 +34,4 @@ class ToDoRepositoryImpl implements ToDoRepository {
   Future<void> deleteTodo(String id) async {
     await _todoRemoteDataSource.removeTodo(id);
   }
-
-  @override
-  Future<void> syncTodos() {
-    // TODO: implement syncTodos
-    throw UnimplementedError();
-  }
 }
